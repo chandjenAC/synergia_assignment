@@ -1,13 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700&display=swap");
+
+::-webkit-scrollbar {
+  position: relative;
+  z-index: -99999;
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  transition: 250ms cubic-bezier(0.285, 0.105, 0.465, 1.015);
+  background: darkgrey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6e48aa;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
