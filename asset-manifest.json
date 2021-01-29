@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/chandjenac/synergia_assignment/static/css/main.78d26f99.chunk.css",
-    "main.js": "/chandjenac/synergia_assignment/static/js/main.a5d08ef2.chunk.js",
-    "main.js.map": "/chandjenac/synergia_assignment/static/js/main.a5d08ef2.chunk.js.map",
-    "runtime-main.js": "/chandjenac/synergia_assignment/static/js/runtime-main.a3436750.js",
-    "runtime-main.js.map": "/chandjenac/synergia_assignment/static/js/runtime-main.a3436750.js.map",
-    "static/js/2.9678875c.chunk.js": "/chandjenac/synergia_assignment/static/js/2.9678875c.chunk.js",
-    "static/js/2.9678875c.chunk.js.map": "/chandjenac/synergia_assignment/static/js/2.9678875c.chunk.js.map",
-    "static/js/3.e9cfd042.chunk.js": "/chandjenac/synergia_assignment/static/js/3.e9cfd042.chunk.js",
-    "static/js/3.e9cfd042.chunk.js.map": "/chandjenac/synergia_assignment/static/js/3.e9cfd042.chunk.js.map",
-    "index.html": "/chandjenac/synergia_assignment/index.html",
-    "static/css/main.78d26f99.chunk.css.map": "/chandjenac/synergia_assignment/static/css/main.78d26f99.chunk.css.map",
-    "static/js/2.9678875c.chunk.js.LICENSE.txt": "/chandjenac/synergia_assignment/static/js/2.9678875c.chunk.js.LICENSE.txt"
+    "main.css": "/synergia_assignment/static/css/main.78d26f99.chunk.css",
+    "main.js": "/synergia_assignment/static/js/main.a5d08ef2.chunk.js",
+    "main.js.map": "/synergia_assignment/static/js/main.a5d08ef2.chunk.js.map",
+    "runtime-main.js": "/synergia_assignment/static/js/runtime-main.c67ef803.js",
+    "runtime-main.js.map": "/synergia_assignment/static/js/runtime-main.c67ef803.js.map",
+    "static/js/2.9678875c.chunk.js": "/synergia_assignment/static/js/2.9678875c.chunk.js",
+    "static/js/2.9678875c.chunk.js.map": "/synergia_assignment/static/js/2.9678875c.chunk.js.map",
+    "static/js/3.e9cfd042.chunk.js": "/synergia_assignment/static/js/3.e9cfd042.chunk.js",
+    "static/js/3.e9cfd042.chunk.js.map": "/synergia_assignment/static/js/3.e9cfd042.chunk.js.map",
+    "index.html": "/synergia_assignment/index.html",
+    "static/css/main.78d26f99.chunk.css.map": "/synergia_assignment/static/css/main.78d26f99.chunk.css.map",
+    "static/js/2.9678875c.chunk.js.LICENSE.txt": "/synergia_assignment/static/js/2.9678875c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a3436750.js",
+    "static/js/runtime-main.c67ef803.js",
     "static/js/2.9678875c.chunk.js",
     "static/css/main.78d26f99.chunk.css",
     "static/js/main.a5d08ef2.chunk.js"
