@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     background: "#f5f5f5",
     height: "100vh",
-    padding: "0px 60px",
   },
   titleCont: {
     marginBottom: "1.5rem",
@@ -57,14 +56,7 @@ const ParentContainer = () => {
   const [cities, setCities] = useState([]);
   const [graphData, setGraphData] = useState({
     data: [],
-    lines: [
-      { key: "no2", name: "NO2", unit: "µg/m³" },
-      { key: "pm25", name: "PM25", unit: "µg/m³" },
-      { key: "o3", name: "O3", unit: "µg/m³" },
-      { key: "co", name: "CO", unit: "µg/m³" },
-      { key: "pm10", name: "PM10", unit: "µg/m³" },
-      { key: "so2", name: "SO2", unit: "µg/m³" },
-    ],
+    lines: [],
   });
 
   useEffect(() => {
@@ -98,17 +90,25 @@ const ParentContainer = () => {
     let res = await get(url);
     if (res?.results?.length > 0) {
       let chartData = [];
+      let lines = [];
       let groupedByDate = mapValues(groupBy(res.results, "date.utc"));
-      Object.keys(groupedByDate).forEach((key) => {
+      Object.keys(groupedByDate).forEach((key, index) => {
         let graphPointData = {};
         graphPointData.name = key;
         groupedByDate[key].forEach((item) => {
           graphPointData[item.parameter] = item.value;
+          if (index === 0) {
+            lines.push({
+              key: item.parameter,
+              name: item.parameter.toUpperCase(),
+              unit: item.unit,
+            });
+          }
         });
         chartData.push(graphPointData);
       });
       chartData.reverse();
-      setGraphData({ ...graphData, data: chartData });
+      setGraphData({ lines: lines, data: chartData });
     }
     setLoading(false);
     setSubmitting(false);
